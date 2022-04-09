@@ -394,5 +394,6 @@ QBCore.Commands.Add('givecash', 'Give cash to player.', {{name = 'id', help = 'P
 end)
 
 RegisterNetEvent("payanimation", function()
-    TriggerEvent('animations:client:EmoteCommandStart', {"id"})
+	ExecuteCommand('e id')
+    --TriggerEvent('animations:client:EmoteCommandStart', {"id"})
 end)
